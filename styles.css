@@ -1890,6 +1890,8 @@ section:nth-child(odd) {
     .blog-grid {
         gap: 2rem;
     }
+}
+
     
     .approach-section,
     .services-section,
