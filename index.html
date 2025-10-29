@@ -121,15 +121,14 @@
 
         <section class="comparison-section">
             <div class="container">
-                <div class="comparison-demo" style="max-width: 800px; margin: 0 auto; padding: 4rem 0;">
+                <div class="comparison-demo" style="max-width: 800px; margin: 0 auto; padding: 2rem 0;">
                     <div class="tab-interface">
                         <div class="tab-header" style="display: flex; margin-bottom: 3rem;">
-                            <button class="tab-btn active-tab" onclick="showTab('problem-tab', this)" style="flex: 1; padding: 1.5rem 2rem; border: none; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; background: #d4a574; color: white; font-weight: 300;">Dating Apps</button>
-                            <button class="tab-btn" onclick="showTab('solution-tab', this)" style="flex: 1; padding: 1.5rem 2rem; border: none; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; background: transparent; color: #2c3e50; font-weight: 300; border: 2px solid #d4a574;">The Kismet Difference</button>
+                            <button class="tab-btn active-tab" onclick="showTab('solution-tab', this)" style="flex: 1; padding: 1.5rem 2rem; border: none; font-size: 1.3rem; cursor: pointer; transition: all 0.3s ease; background: #d4a574; color: white; font-weight: 300;">The Kismet Difference</button>
+                            <button class="tab-btn" onclick="showTab('problem-tab', this)" style="flex: 1; padding: 1.5rem 2rem; border: none; font-size: 1.3rem; cursor: pointer; transition: all 0.3s ease; background: transparent; color: #2c3e50; font-weight: 300; border: 2px solid #d4a574;">Dating Apps</button>
                         </div>
                         
-                        <div id="problem-tab" class="tab-panel" style="display: block; text-align: center;">
-                            <h3 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 3rem; color: #2c3e50; font-weight: 300;">Dating Apps</h3>
+                        <div id="problem-tab" class="tab-panel" style="display: none; text-align: center;">
                             <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto; text-align: left;">
                                 <li style="margin-bottom: 2rem; padding-left: 2.5rem; position: relative; color: #2c3e50; font-size: 1.2rem; line-height: 1.8;">
                                     <span style="position: absolute; left: 0; color: #2c3e50; font-size: 1.8rem; top: -0.3rem; font-weight: bold;">•</span>
@@ -154,8 +153,7 @@
                             </ul>
                         </div>
                         
-                        <div id="solution-tab" class="tab-panel" style="display: none; text-align: center;">
-                            <h3 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 3rem; color: #2c3e50; font-weight: 300;">The Kismet Difference</h3>
+                        <div id="solution-tab" class="tab-panel" style="display: block; text-align: center;">
                             <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto; text-align: left;">
                                 <li style="margin-bottom: 2rem; padding-left: 2.5rem; position: relative; color: #2c3e50; font-size: 1.2rem; line-height: 1.8;">
                                     <span style="position: absolute; left: 0; color: #2c3e50; font-size: 1.8rem; top: -0.3rem; font-weight: bold;">•</span>
@@ -193,79 +191,33 @@
 
         <section class="approach-section">
             <div class="container">
-                <div class="approach-content">
-                    <div class="approach-image">
-                        <img src="https://plus.unsplash.com/premium_photo-1664529914557-ee01920185e2?auto=format&fit=crop&w=800&q=80" alt="Heart hands shadow representing love and connection">
-                    </div>
+                <div class="approach-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
                     <div class="approach-text">
-                        <h2>Professional Matchmaking</h2>
-                        <p>We're living in a time where dating apps, algorithms, and filtered realities have reshaped how we connect. Swiping replaced serendipity. Performative small talk replaced genuine curiosity. In a world of endless options, many of us are left feeling lonelier than ever.</p>
-                        <p>The result? A generation that's craving intimacy but burnt out on the means to find it.</p>
-                        <p>Our tailored approach helps you find a partner who genuinely aligns with your values, preferences, and long-term relationship goals. We ensure every client is ready for a committed relationship, because clarity and commitment are the foundations of a successful matchmaking journey.</p>
+                        <h2>Personalized Matchmaking</h2>
+                        <p style="margin-bottom: 2rem;">At Kismet Matchmaking, we take a thoughtful, personalized approach to helping you find lasting love. Our tailored process helps you find a partner who genuinely aligns with your values, preferences, and long-term relationship goals. We ensure every client is ready for a committed relationship, because clarity and intention are the foundations of a successful matchmaking journey.</p>
+                        
+                        <p style="font-style: italic; margin-bottom: 1rem;">"Mala has a natural ability to connect with others, and her warm sincerity immediately puts people at ease. Her enthusiastic energy and persuasive communication style create a welcoming and engaging atmosphere. Paired with her sharp attention to detail, I have every confidence in her matchmaking abilities and her talent for bringing people together successfully."</p>
+                        <p style="color: #d4a574; font-weight: 500; font-size: 0.9rem;">— Frederic Lucas-Conwell, Founder & President, <a href="https://www.gri.co/" target="_blank" style="color: #d4a574; text-decoration: underline;">Growth Resources Institute</a></p>
+                    </div>
+                    <div class="approach-image" style="height: 100%;">
+                        <img src="https://plus.unsplash.com/premium_photo-1664529914557-ee01920185e2?auto=format&fit=crop&w=800&h=800&q=80" alt="Heart hands shadow representing love and connection" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="services-section">
+        <section class="approach-section">
             <div class="container">
-                <h2 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 300; color: #2c3e50; margin-bottom: 2.5rem; line-height: 1.2; letter-spacing: -0.02em;">Relationship Guidance</h2>
-                <p style="max-width: 800px; margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.7; color: #2c3e50; font-weight: 300;">Our matchmaking philosophy emphasises the importance of assessing your readiness for commitment and clarifying your vision of an ideal partner. This involves introspection about your personal goals, emotional readiness, and the qualities that truly matter to you.</p>
-                
-                <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 6rem; align-items: flex-start;">
-                    <div class="services-image">
-                        <img src="yellow-field-path-bg.jpg" alt="Yellow field with winding path representing guidance and journey">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+                    <div class="services-image" style="height: 75%;">
+                        <img src="yellow-field-path-bg.jpg" alt="Yellow field with winding path representing guidance and journey" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    
-                    <div class="services-grid" style="display: flex; flex-direction: column; gap: 3rem;">
-                        <div class="service-column">
-                            <div class="service-icon" style="margin-bottom: 1rem;">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d4a574" stroke-width="1.5">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg>
-                            </div>
-                            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 300; color: #2c3e50; margin-bottom: 1rem;">Professional Profile Creation</h3>
-                            <p style="font-size: 1.1rem; line-height: 1.7; color: #2c3e50; font-weight: 300;">Crafting a compelling, authentic profile that reflects who you are and what you're looking for.</p>
-                        </div>
+                    <div class="services-text">
+                        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 300; color: #2c3e50; margin-bottom: 2rem; line-height: 1.2; letter-spacing: -0.02em;">Relationship Vision & Fit</h2>
+                        <p style="margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.7; color: #2c3e50; font-weight: 300;">Our matchmaking philosophy is centered on self-awareness and emotional readiness. Together, we explore your relationship objectives, personal goals, and the qualities that genuinely matter to you. This thoughtful process ensures that every match is not only compatible on paper, but aligned in purpose and heart.</p>
                         
-                        <div class="service-column">
-                            <div class="service-icon" style="margin-bottom: 1rem;">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d4a574" stroke-width="1.5">
-                                    <path d="M8 2v4"></path>
-                                    <path d="M16 2v4"></path>
-                                    <rect x="3" y="4" width="18" height="18" rx="2"></rect>
-                                    <path d="M3 10h18"></path>
-                                </svg>
-                            </div>
-                            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 300; color: #2c3e50; margin-bottom: 1rem;">Personalized Date Planning</h3>
-                            <p style="font-size: 1.1rem; line-height: 1.7; color: #2c3e50; font-weight: 300;">Thoughtfully curated dates tailored to your preferences and lifestyle.</p>
-                        </div>
-                        
-                        <div class="service-column">
-                            <div class="service-icon" style="margin-bottom: 1rem;">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d4a574" stroke-width="1.5">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg>
-                            </div>
-                            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 300; color: #2c3e50; margin-bottom: 1rem;">Relationship & Dating Coaching</h3>
-                            <p style="font-size: 1.1rem; line-height: 1.7; color: #2c3e50; font-weight: 300;">One-on-one sessions to build confidence, improve communication, and clarify your relationship goals.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="application-section">
-            <div class="container">
-                <div class="application-content">
-                    <div class="application-text">
-                        <h2>Our Application Process</h2>
-                        <p>Our intake process includes a full assessment of your goals, personality traits, and preferences. We consider everything from lifestyle and hobbies to career goals and values, forming a complete picture of who you are, so we can match you accordingly.</p>
-                        <p>Unlike services that focus on quantity or limit clients to a certain time frame, Kismet stays with you as long as you're single and seeking love. You're never just a number in our system.</p>
-                    </div>
-                    <div class="application-image">
-                        <img src="https://images.unsplash.com/photo-1642543492366-a92039433543?auto=format&fit=crop&w=800&q=80" alt="Notebook and pen on wooden table representing application process">
+                        <p style="font-style: italic; margin-bottom: 1rem;">"Mala delivers a matchmaking experience that feels both exclusive and deeply personal. Every interaction with her reflected confidentiality, a warm understanding and impeccable taste. Her ability to combine insight with intuition is extraordinary, leading her to curate introductions that truly resonate. For anyone who values quality, discretion, and genuine connection, this is the gold standard of modern matchmaking."</p>
+                        <p style="color: #d4a574; font-weight: 500; font-size: 0.9rem;">— G.S., NY</p>
                     </div>
                 </div>
             </div>
