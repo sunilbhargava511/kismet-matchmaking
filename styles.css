@@ -559,7 +559,7 @@ section:nth-child(odd) {
 /* Why Kismet Hero Section */
 .why-kismet-hero {
     background-color: #f8f9fa;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('yellow-flowers-bg.jpg') !important;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('yellow-flowers-bg.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -592,7 +592,7 @@ section:nth-child(odd) {
 /* Professional Services Hero Section */
 .professional-services-hero {
     background-color: #f8f9fa;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('couple-ocean-sunset-bg.jpg') !important;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('couple-ocean-sunset-bg.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat;
