@@ -429,7 +429,7 @@ section:nth-child(odd) {
 /* What We Do Section - Friending Spaces Style */
 .what-we-do {
     background: #f8f9fa;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     position: relative;
 }
 
@@ -563,8 +563,8 @@ section:nth-child(odd) {
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    padding: 2rem 0;
-    margin: 1rem 0;
+    padding: 1rem 0;
+    margin: 0.5rem 0;
     position: relative;
     min-height: 350px;
     display: flex;
@@ -596,8 +596,8 @@ section:nth-child(odd) {
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat;
-    padding: 2rem 0;
-    margin: 1rem 0;
+    padding: 1rem 0;
+    margin: 0.5rem 0;
     position: relative;
     min-height: 350px;
     display: flex;
@@ -626,7 +626,7 @@ section:nth-child(odd) {
 /* Comparison Section */
 .comparison-section {
     background: #f8f9fa;
-    padding: 4rem 0;
+    padding: 2rem 0;
     position: relative;
 }
 
@@ -2144,4 +2144,26 @@ section:nth-child(odd) {
     .inline-text {
         width: 120px !important;
     }
+}
+
+/* Comparison Section Styles */
+.grayed-out {
+    opacity: 0.4;
+    color: #999 !important;
+}
+
+.grayed-out li, .grayed-out span {
+    color: #999 !important;
+}
+
+.active-side {
+    background: #d4a574 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.inactive-side {
+    background: transparent !important;
+    color: #999 !important;
+    border: 2px solid #ccc !important;
 }
