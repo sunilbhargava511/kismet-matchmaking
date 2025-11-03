@@ -76,6 +76,10 @@ main {
     align-items: center;
 }
 
+/* used in about page */
+.extra-bold {
+      font-weight: 900; /* Or 800 for slightly less bold */
+}
 .logo {
     display: flex;
     align-items: center;
