@@ -1821,6 +1821,12 @@ section:nth-child(odd) {
         grid-template-columns: 1fr !important;
         gap: 2.5rem !important;
     }
+
+    /* Mobile stacking for Real Connection section - image on top */
+    .real-connection-section {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
 }
 
 @media (max-width: 480px) {
