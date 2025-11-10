@@ -1806,12 +1806,18 @@ section:nth-child(odd) {
     section {
         padding: 3rem 0;
     }
-    
+
     .matchmaking-approach,
     .detailed-services,
     .blog-previews,
     .cta-section {
         padding: 3rem 0;
+    }
+
+    /* Mobile stacking for Why Matchmaking Matters & Dating Today */
+    .matchmaking-dating-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem !important;
     }
 }
 
