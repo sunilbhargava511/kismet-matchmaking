@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Kismet Matchmaking</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Frequently Asked Questions about Kismet Matchmaking - Learn about our personalized matchmaking process and services.">
+    <style>
+        /* FAQ-specific styles */
+        .faq-hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('yellow-flowers-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 4rem 0;
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+
+        .faq-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.75rem;
+            font-weight: 300;
+            color: #2c3e50;
+            margin: 0;
+            letter-spacing: -0.02em;
+        }
+
+        .faq-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .faq-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(212, 165, 116, 0.1);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .faq-question:hover {
+            background: rgba(212, 165, 116, 0.05);
+        }
+
+        .faq-question h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #2c3e50;
+            margin: 0;
+            flex: 1;
+            letter-spacing: -0.01em;
+            line-height: 1.4;
+        }
+
+        .faq-arrow {
+            font-size: 1.2rem;
+            color: #d4a574;
+            transition: transform 0.3s ease;
+            margin-left: 1rem;
+            flex-shrink: 0;
+        }
+
+        .faq-item.active .faq-arrow {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 2rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+            padding: 0 2rem 2rem 2rem;
+        }
+
+        .faq-answer p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #5a6c7d;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-answer ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .faq-answer li {
+            padding: 0.5rem 0 0.5rem 1.8rem;
+            position: relative;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #5a6c7d;
+            font-weight: 300;
+        }
+
+        .faq-answer li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #d4a574;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .process-steps {
+            margin-top: 1rem;
+        }
+
+        .process-step {
+            margin-bottom: 1rem;
+        }
+
+        .step-label {
+            font-weight: 500;
+            color: #d4a574;
+        }
+
+        @media (max-width: 768px) {
+            .faq-hero {
+                padding: 3rem 0;
+            }
+
+            .faq-title {
+                font-size: 2.5rem;
+            }
+
+            .faq-question {
+                padding: 1.5rem;
+            }
+
+            .faq-question h3 {
+                font-size: 1.2rem;
+            }
+
+            .faq-answer {
+                padding: 0 1.5rem;
+            }
+
+            .faq-item.active .faq-answer {
+                padding: 0 1.5rem 1.5rem 1.5rem;
+            }
+
+            .faq-answer p,
+            .faq-answer li {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .faq-title {
+                font-size: 2rem;
+            }
+
+            .faq-question h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Kismet Matchmaking Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="faq-hero">
+            <h1 class="faq-title">Frequently Asked Questions</h1>
+        </section>
+
+        <section class="faq-section">
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Am I a good fit for a personalized matchmaking service?</h3>
+                        <span class="faq-arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You may be ready for a personalized matchmaking service if one or more of the following resonates with you:</p>
+                        <ul>
+                            <li>You are seeking an authentic connection and a long-term relationship.</li>
+                            <li>You have been intentional and committed to dating, but despite your efforts, things haven't worked out.</li>
+                            <li>You no longer want to invest time in dating apps or event-based services that profit from continued participation rather than real outcomes.</li>
+                            <li>You recognize that many apps and event-driven platforms are designed to keep you single, not help you find a lasting partner.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>How is Kismet Matchmaking different from other matchmaking services?</h3>
+                        <span class="faq-arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kismet Matchmaking is intentionally selective and outcome-focused.</p>
+                        <ul>
+                            <li>Every client is personally vetted to ensure they are genuinely seeking a long-term relationship.</li>
+                            <li>There is no upfront cost to join. Our fees are success-based.</li>
+                            <li>We curate thoughtful one-on-one introductions and only make matches when there is meaningful potential.</li>
+                            <li>Our founder and chief matchmaker, Mala, brings an unmatched network and a natural ability to connect deeply with people. This allows her to truly understand each client and make introductions rooted in real compatibility, not surface-level criteria.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>What type of clients is Kismet Matchmaking best suited for?</h3>
+                        <span class="faq-arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kismet Matchmaking works best for discerning, busy professionals who value quality, intention, and efficiency.</p>
+                        <p>Our clients:</p>
+                        <ul>
+                            <li>Are accomplished professionals who know what they want and value their time.</li>
+                            <li>Are actively engaged in finding a life partner, not passively waiting for chance encounters.</li>
+                            <li>Prefer a thoughtful process, with optional guidance, over random matches, group events, or algorithm-driven selections.</li>
+                            <li>Are not looking to fill their social calendar or just have more acquaintances.</li>
+                            <li>Are seeking one meaningful connection with someone who aligns with their lifestyle, values, and long-term vision.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>How is Kismet Matchmaking different from event-based meetups and services?</h3>
+                        <span class="faq-arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kismet is a personalized matchmaking service focused exclusively on helping you find a romantic partner.</p>
+                        <ul>
+                            <li>We understand that you are a busy professional who does not want to waste time on broad, unfocused offerings.</li>
+                            <li>Unlike event-based models that blur the lines between networking, friendship, and dating, our purpose is clear: to help you find a compatible long-term partner.</li>
+                            <li>Group events often favor certain personalities and can obscure true connection. Many exceptional individuals do not thrive in loud or competitive group settings, while others may shine in groups but struggle one-on-one.</li>
+                            <li>Kismet removes the noise and focuses entirely on curated, one-on-one introductions where genuine connection can unfold naturally.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>What's the Kismet Matchmaking process?</h3>
+                        <span class="faq-arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>At Kismet, quality and intention guide every step of our process. We personally meet every potential client to ensure alignment with our values and approach. This allows us to understand each person's personality, lifestyle, and long-term goals so matches are based on true compatibility.</p>
+                        <p>Our process includes:</p>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <p><span class="step-label">Step 1:</span> Complete our intake form if you, or someone you know, are interested in working with us.</p>
+                            </div>
+                            <div class="process-step">
+                                <p><span class="step-label">Step 2:</span> We review your information to determine alignment. If there is a fit, we may request additional details and schedule a video call.</p>
+                            </div>
+                            <div class="process-step">
+                                <p><span class="step-label">Step 3:</span> During the video call, we get to know each other more deeply and walk you through our services, fees, and matchmaking process.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to meet your partner?</h2>
+                    <button class="cta-button small" onclick="window.open('https://docs.google.com/forms/d/1uelTDzfNpzE5axADh90TwmAs3PWkDsUUjUpzAipQ-7g/viewform', '_blank')">Find Your Match</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content-new">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Kismet Matchmaking Logo">
+                    </div>
+                    <a href="privacy.html" style="font-size: 0.9rem; color: #6c757d; text-decoration: none; margin-top: 0.5rem; margin-left: 1rem; display: block;">Privacy Policy</a>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://instagram.com/kismetmatchmaking" target="_blank" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:kismetloveus@gmail.com" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // If this wasn't active, open it
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FLMFN58JR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7FLMFN58JR');
+    </script>
+</body>
+</html>
